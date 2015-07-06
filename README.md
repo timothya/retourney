@@ -1,25 +1,30 @@
-## ReTourney - Restful Tournament API
+# ReTourney - Restful Tournament API
 
-Create a new tourney
-
-* name
-* number of participants
-* type
+WIP
 
 ---
 
-# Participant Org
+### Actions
+
+* CRUD
+* 
+
+---
+
+### Models
+
+#### Participant Org
 
 * name
 * id
 
-# Participant
+#### Participant
 
 * name
 * id
 * organization/team/school id
 
-# Tourney
+#### Tourney
 
 * name
 * description
@@ -27,30 +32,30 @@ Create a new tourney
 * created
 
 
-# Match
+#### Match
 
 * match id
 * tourney id
 * participant a
 * participant b
 
-# Tourney Type
+#### Tourney Type
 
 * Single Elimination
 * Double Elimination
 * Round-Robin
 
-# Tourney Round
+#### Tourney Round
 
 * tourney id
 * round id
 
-# MatchResult
+#### MatchResult
 
 * match id
-* 
+*
 
-# Tourney Result
+#### Tourney Result
 
 * tourney id
 
