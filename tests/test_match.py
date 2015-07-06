@@ -16,9 +16,8 @@ class TestMatchObject(unittest.TestCase):
         self.assertListEqual(self.match.getParticipants(), [self.participant1])
 
     def testAddingMoreThanTwoParticipants(self):
-        self.match.addParticipant(self.participant1)
-        self.match.addParticipant(self.participant1)
-        self.match.addParticipant(self.participant1)
+        for i in range(3):
+            self.match.addParticipant(self.participant1)
         self.assertEqual(len(self.match.getParticipants()), 2)
 
 if __name__ == '__main__':
