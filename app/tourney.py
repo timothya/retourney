@@ -1,6 +1,9 @@
 class Tourney:
-    def __init__(self, name):
+    name = None
+
+    def __init__(self, name=None):
         self.name = name
 
-    def getName(self):
+    @property
+    def name(self):
         return self.name

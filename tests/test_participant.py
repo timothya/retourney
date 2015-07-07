@@ -7,7 +7,7 @@ class TestParticipant(unittest.TestCase):
         self.participant = Participant("PartName");
 
     def testParticipantInit(self):
-       self.assertEqual(self.participant.getName(), "PartName")
+       self.assertEqual(self.participant.name, "PartName")
 
 if __name__ == '__main__':
     unittest.main()

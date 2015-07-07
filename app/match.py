@@ -1,15 +1,20 @@
 class Match:
-    def __init__(self, name):
+    name = None
+    participants = []
+
+    def __init__(self, name=None):
         self.name = name
         self.participants = []
 
-    def getName(self):
+    @property
+    def name(self):
         return self.name
 
-    def addParticipant(self, participant):
+    def add_participant(self, participant):
         if len(self.participants) < 2:
             self.participants.append(participant)
 
-    def getParticipants(self):
+    @property
+    def participants(self):
         return self.participants
 

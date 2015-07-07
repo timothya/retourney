@@ -7,7 +7,7 @@ class TestTourney(unittest.TestCase):
         self.tourney = Tourney("TourneyName");
 
     def testTourneyInit(self):
-       self.assertEqual(self.tourney.getName(), "TourneyName")
+       self.assertEqual(self.tourney.name, "TourneyName")
 
 if __name__ == '__main__':
     unittest.main()

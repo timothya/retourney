@@ -9,16 +9,16 @@ class TestMatchObject(unittest.TestCase):
         self.participant1 = Participant("Part1")
 
     def testMatchInit(self):
-       self.assertEqual(self.match.getName(), "MatchName")
+       self.assertEqual(self.match.name, "MatchName")
 
     def testAddParticipant(self):
-        self.match.addParticipant(self.participant1)
-        self.assertListEqual(self.match.getParticipants(), [self.participant1])
+        self.match.add_participant(self.participant1)
+        self.assertListEqual(self.match.participants, [self.participant1])
 
     def testAddingMoreThanTwoParticipants(self):
         for i in range(3):
-            self.match.addParticipant(self.participant1)
-        self.assertEqual(len(self.match.getParticipants()), 2)
+            self.match.add_participant(self.participant1)
+        self.assertEqual(len(self.match.participants), 2)
 
 if __name__ == '__main__':
     unittest.main()
